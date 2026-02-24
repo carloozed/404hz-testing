@@ -1,0 +1,19 @@
+.setduration {
+  align-self: flex-end;
+  position: absolute;
+  top: -2%;
+  display: flex;
+  gap: var(--spacing-1);
+}
+
+.miniplayer.setduration {
+  top: -20%;
+}
+
+.setduration p {
+  font-size: var(--text-xs);
+}
+
+.miniplayer p {
+  font-size: var(--text-xxs);
+}

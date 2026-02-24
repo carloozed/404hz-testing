@@ -1,0 +1,29 @@
+.albumCover {
+  position: relative;
+}
+
+.imageOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(212, 212, 212, 0);
+  transition: all 0.2s var(--bezier);
+  backdrop-filter: blur(0px);
+}
+
+.albumCover:hover .imageOverlay {
+  background-color: rgba(203, 203, 203, 0.8);
+  backdrop-filter: blur(var(--backdrop-filter));
+}
+
+.heartContainer {
+  position: absolute;
+  top: var(--spacing-2);
+  right: var(--spacing-2);
+}
+
+.albumCover:hover .heartContainer {
+  opacity: 1;
+}

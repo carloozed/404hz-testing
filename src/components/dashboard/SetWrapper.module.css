@@ -1,0 +1,10 @@
+.setWrapper {
+  transition: background-color 0.5s ease;
+  overflow: hidden;
+}
+
+.tracksWrapper {
+  position: relative;
+  overflow: scroll;
+  max-height: 40rem;
+}

@@ -1,0 +1,10 @@
+.titleContainer {
+  width: 100%;
+}
+
+.titleContainer h4 {
+  font-size: var(--text-sm);
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 500;
+}

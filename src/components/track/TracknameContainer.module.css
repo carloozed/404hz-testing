@@ -1,0 +1,41 @@
+.title {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-3);
+}
+
+.title h4 {
+  font-weight: 400;
+  font-size: var(--text-sm);
+  width: fit-content;
+  overflow: hidden;
+}
+
+.copycontainer {
+  cursor: pointer;
+  position: relative;
+}
+
+.copycontainer::before {
+  content: 'copy';
+  position: absolute;
+  left: 150%;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: var(--text-xs);
+  opacity: 0;
+}
+
+.copycontainer.copied::before {
+  content: 'copied!';
+  opacity: 1;
+}
+
+.copycontainer:hover::before {
+  opacity: 1;
+}
+
+.copycontainer img {
+  height: var(--spacing-3);
+  width: auto;
+}

@@ -1,0 +1,95 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--spacing-2);
+  transition: background-color 0.2s linear;
+  background-color: var(--main-color);
+}
+
+.leftContainer {
+  display: flex;
+  gap: var(--spacing-4);
+  align-items: center;
+  width: 100%;
+  flex-flow: 2;
+}
+
+.miniplayer .leftContainer {
+  gap: var(--spacing-1);
+}
+
+.infoContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+  gap: var(--spacing-2);
+  width: 100%;
+}
+
+.miniplayer .infoContainer {
+  height: 100%;
+  gap: var(--spacing-1);
+}
+
+.upperContainer {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-1);
+}
+
+.setImageContainer {
+  border: var(--border-base);
+  position: relative;
+  aspect-ratio: 1/1;
+  height: 10rem;
+  width: 10rem;
+}
+
+.response .setImageContainer {
+  height: 8rem;
+  width: 8rem;
+}
+
+.miniplayer .setImageContainer {
+  height: 4rem;
+  width: 4rem;
+}
+
+.setImageContainer:hover .imageOverlay {
+  opacity: 1;
+}
+
+.setImageContainer img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  object-fit: fill;
+}
+
+.imageOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(var(--backdrop-filter));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.infoContainer h5 {
+  font-size: var(--text-sm);
+  font-weight: 500;
+}
+
+.lowercontainer {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-2);
+  margin-top: var(--spacing-2);
+}

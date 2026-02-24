@@ -1,0 +1,64 @@
+.outer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 100;
+  opacity: 1;
+}
+
+.playerHidden {
+  opacity: 0;
+  pointer-events: none;
+  height: 10rem;
+}
+
+.outer:hover .hide {
+  opacity: 1;
+  transform: translateY(0%);
+}
+
+.wrapper {
+  width: calc(20vw + 20rem);
+  border: var(--border-base);
+  transition: width 0.5s var(--bezier);
+  overflow: hidden;
+}
+
+.hidden {
+  width: calc(9rem + var(--spacing-1));
+}
+
+.container {
+  height: fit-content;
+  position: relative;
+  width: calc(20vw + 20rem);
+  overflow-x: clip;
+}
+
+.hide {
+  position: absolute;
+  top: -20%;
+  right: 0;
+  cursor: pointer;
+  padding-bottom: 0.5rem;
+  transform: translateY(100%);
+  transition: all 0.4s var(--bezier);
+}
+
+.hide p {
+  font-size: var(--text-2xl);
+}
+
+.previewTrackContainer {
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  transition: transform 0.4s var(--bezier);
+  transform: translateY(0%);
+}
+
+.trackhidden {
+  transform: translateY(100%);
+}

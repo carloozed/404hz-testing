@@ -1,0 +1,15 @@
+.infoContainerPlayer {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-1);
+  align-items: left;
+  width: 20rem;
+  max-width: 20rem;
+  padding-left: var(--spacing-4);
+}
+
+.lowercontainer {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-1);
+}

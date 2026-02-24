@@ -1,0 +1,23 @@
+.indicatorContainer {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: var(--spacing-4);
+  height: fit-content;
+  align-self: center;
+}
+
+.indicator {
+  height: var(--spacing-3);
+  width: var(--spacing-3);
+  border: var(--border-base);
+  transform: rotate(45deg);
+  border-left: 0;
+  border-top: 0;
+  transition: transform 0.2s linear;
+}
+
+.isActive {
+  transform: rotate(-135deg);
+}

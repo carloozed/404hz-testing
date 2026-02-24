@@ -1,0 +1,22 @@
+.analyzeFieldText {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-4);
+}
+
+.analyzeFieldText p {
+  font-size: var(--text-sm);
+}
+
+.iconbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-5);
+}
+
+.iconbar img {
+  height: var(--spacing-5);
+  width: var(--spacing-5);
+  object-fit: contain;
+}

@@ -1,0 +1,19 @@
+{
+  "format": "custom",
+  "id": "white_arrow",
+  "label": "White Arrow",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "white_arrow": {
+        "type": "Image",
+        "config": {
+          "label": "White Arrow",
+          "constraint": {},
+          "thumbnails": []
+        }
+      }
+    }
+  }
+}

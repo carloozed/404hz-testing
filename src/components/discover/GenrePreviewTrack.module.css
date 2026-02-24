@@ -1,0 +1,69 @@
+.genrepreview {
+  padding: var(--spacing-2) var(--spacing-8);
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-4);
+}
+
+.genrepreview h3 {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: var(--text-2xl);
+  width: fit-content;
+  background-color: var(--black);
+  color: var(--main-color);
+  padding: var(--spacing-1) var(--spacing-0);
+}
+
+.upperContainer {
+  display: flex;
+  width: 100%;
+  gap: var(--spacing-2);
+  flex-direction: column;
+}
+
+.upperContainer h5 {
+  font-weight: 400;
+  font-size: var(--text-sm);
+}
+
+.seeall {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-2);
+  cursor: pointer;
+}
+
+.lowerContainer {
+  display: grid;
+  grid-template-columns: 0.2fr 1fr;
+  border-top: var(--border-base);
+  padding: var(--spacing-8) 0;
+}
+
+.previewTracks {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: var(--spacing-6);
+  flex-wrap: wrap;
+}
+
+.artistPreview {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-2);
+  height: 100%;
+
+  padding-bottom: var(--spacing-4);
+}
+
+.artistPreview h4 {
+  font-weight: 400;
+  font-size: var(--text-sm);
+}
+
+.artistPreview h5 {
+  text-transform: uppercase;
+}

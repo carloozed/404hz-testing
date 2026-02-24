@@ -1,0 +1,20 @@
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: calc(0.1vw + 0.1rem);
+}
+
+/* Small Mobile */
+/* Up to 480px */
+@media (max-width: 30rem) {
+}
+
+/* Mobile */
+/* Up to 768px */
+@media (max-width: 48rem) {
+  .formGroup {
+    display: flex;
+    flex-direction: column;
+    gap: calc(0.1vw + 0.1rem);
+  }
+}

@@ -1,0 +1,29 @@
+.main {
+  position: relative;
+}
+
+.main p {
+  line-height: 130%;
+}
+
+.searchContainer {
+  display: flex;
+}
+
+.searchbar {
+  padding-bottom: var(--spacing-16);
+  position: sticky;
+  top: 3.5rem;
+  left: 0;
+  z-index: 3;
+  transition:
+    transform 0.3s ease,
+    top 0.3s ease;
+  width: 50vw;
+  margin: auto;
+}
+
+.stuck {
+  top: 2.8rem;
+  transform: translateX(-32.6vw) scale(0.8);
+}

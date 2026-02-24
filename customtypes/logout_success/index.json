@@ -1,0 +1,63 @@
+{
+  "format": "page",
+  "id": "logout_success",
+  "label": "Logout Success",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "logout_was_successful": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Logout Was Successful",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "multi": "heading2"
+        }
+      },
+      "redirect": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Redirect",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "multi": "paragraph,hyperlink,heading4,heading5,strong,em"
+        }
+      },
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {}
+        }
+      }
+    },
+    "SEO & Metadata": {
+      "meta_title": {
+        "config": {
+          "label": "Meta Title",
+          "placeholder": "A title of the page used for social media and search engines"
+        },
+        "type": "Text"
+      },
+      "meta_description": {
+        "config": {
+          "label": "Meta Description",
+          "placeholder": "A brief summary of the page"
+        },
+        "type": "Text"
+      },
+      "meta_image": {
+        "config": {
+          "constraint": {
+            "height": 1260,
+            "width": 2400
+          },
+          "label": "Meta Image",
+          "thumbnails": []
+        },
+        "type": "Image"
+      }
+    }
+  }
+}

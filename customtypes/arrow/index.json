@@ -1,0 +1,19 @@
+{
+  "format": "custom",
+  "id": "arrow",
+  "label": "Black Arrow",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "arrow": {
+        "type": "Image",
+        "config": {
+          "label": "Arrow",
+          "constraint": {},
+          "thumbnails": []
+        }
+      }
+    }
+  }
+}

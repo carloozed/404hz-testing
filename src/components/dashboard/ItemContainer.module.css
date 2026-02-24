@@ -1,0 +1,20 @@
+.container {
+  padding: var(--spacing-2);
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.items {
+  height: fit-content;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  row-gap: 2rem;
+  width: 100%;
+}
+
+.indicator {
+  padding: var(--spacing-8) 0;
+  display: flex;
+}

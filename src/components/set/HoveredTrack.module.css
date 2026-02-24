@@ -1,0 +1,13 @@
+.hoveredTrackInfo {
+  display: flex;
+  align-items: flex-end;
+  gap: var(--spacing-1);
+  font-size: var(--text-s);
+  color: var(--text-secondary);
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.author {
+  font-weight: 600;
+}

@@ -1,0 +1,4 @@
+.sectionContainer {
+  padding: 0 var(--spacing-2);
+  height: 90vh;
+}

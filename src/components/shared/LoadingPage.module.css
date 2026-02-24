@@ -1,0 +1,14 @@
+.loadingPage {
+  height: 100svh;
+  width: 100svw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.indicator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

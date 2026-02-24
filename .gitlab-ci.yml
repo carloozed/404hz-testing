@@ -1,0 +1,43 @@
+stages: [build, deploy]
+
+build:
+  image: node:20-alpine
+  stage: build
+  variables:
+    NPM_CONFIG_PRODUCTION: 'false'
+  script:
+    - npm ci
+    - npm run build
+  artifacts:
+    paths: [out/]
+    expire_in: 1 week
+  rules:
+    - if: $CI_COMMIT_BRANCH == "main"
+
+deploy:
+  image:
+    name: amazon/aws-cli:latest
+    entrypoint: [''] # override 'aws' entrypoint
+  stage: deploy
+  needs: [build]
+
+  # 👇 Ask GitLab to mint an OIDC token for this job with audience 'sts.amazonaws.com'
+  id_tokens:
+    AWS_ID_TOKEN:
+      aud: sts.amazonaws.com
+
+  before_script:
+    # Write the job OIDC token to a file for AWS STS
+    - echo "$AWS_ID_TOKEN" > /tmp/gitlab-oidc-token
+    - export AWS_WEB_IDENTITY_TOKEN_FILE=/tmp/gitlab-oidc-token
+    - export AWS_ROLE_ARN="$AWS_ROLE_ARN"
+    - export AWS_DEFAULT_REGION="$AWS_REGION"
+
+    # sanity check
+    - aws --version
+    - aws sts get-caller-identity
+  script:
+    - aws s3 sync ./out s3://$S3_BUCKET --delete
+    - aws cloudfront create-invalidation --distribution-id "$CF_DIST_ID" --paths "/*"
+  rules:
+    - if: $CI_COMMIT_BRANCH == "main"

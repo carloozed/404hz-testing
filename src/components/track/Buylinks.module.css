@@ -1,0 +1,25 @@
+.buylinks {
+  display: flex;
+  gap: var(--spacing-3);
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.dashboard {
+  padding-top: var(--spacing-4);
+}
+
+.miniplayer.buylinks img {
+  height: var(--spacing-2-5);
+  width: var(--spacing-2-5);
+}
+
+.buylinks img {
+  height: var(--spacing-4);
+  width: var(--spacing-4);
+}
+
+.scanning img {
+  height: var(--spacing-3);
+  width: var(--spacing-3);
+}

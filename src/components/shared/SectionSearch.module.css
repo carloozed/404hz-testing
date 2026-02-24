@@ -1,0 +1,13 @@
+.form {
+  display: flex;
+  width: 100%;
+}
+
+.inputgroup {
+  width: 100%;
+}
+
+.inputgroup input {
+  display: flex;
+  width: 100%;
+}

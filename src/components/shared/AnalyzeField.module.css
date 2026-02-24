@@ -1,0 +1,81 @@
+.form {
+  display: flex;
+  flex-direction: row;
+  height: fit-content;
+
+  align-items: center;
+}
+
+.form input {
+  height: calc(1.5rem + 1.5vw);
+}
+
+.wiggle {
+  animation: wiggle 0.25s linear;
+}
+
+@-webkit-keyframes wiggle {
+  0% {
+    -webkit-transform: rotate(1deg);
+  }
+
+  25% {
+    -webkit-transform: rotate(-1deg);
+  }
+
+  50% {
+    -webkit-transform: rotate(1deg);
+  }
+
+  75% {
+    -webkit-transform: rotate(-1deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(0deg);
+  }
+}
+
+@-ms-keyframes wiggle {
+  0% {
+    -ms-transform: rotate(1deg);
+  }
+
+  25% {
+    -ms-transform: rotate(-1deg);
+  }
+
+  50% {
+    -ms-transform: rotate(1deg);
+  }
+
+  75% {
+    -ms-transform: rotate(-1deg);
+  }
+
+  100% {
+    -ms-transform: rotate(0deg);
+  }
+}
+
+@keyframes wiggle {
+  0% {
+    transform: rotate(1deg);
+  }
+
+  25% {
+    transform: rotate(-1deg);
+  }
+
+  50% {
+    transform: rotate(1deg);
+  }
+
+  75% {
+    transform: rotate(-1deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}

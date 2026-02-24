@@ -1,0 +1,27 @@
+.filterbar {
+  display: flex;
+  gap: var(--spacing-8);
+}
+
+.filteritem {
+  text-transform: uppercase;
+  padding: var(--spacing-2) var(--spacing-4);
+  border: var(--border-base);
+  cursor: pointer;
+  background-color: var(--main-color);
+  pointer-events: all;
+}
+
+.filteritem:hover,
+.active {
+  background-color: var(--black);
+}
+
+.filteritem p {
+  font-size: var(--text-s);
+}
+
+.filteritem:hover p,
+.active p {
+  color: var(--main-color);
+}

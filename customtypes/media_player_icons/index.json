@@ -1,0 +1,43 @@
+{
+  "format": "custom",
+  "id": "media_player_icons",
+  "label": "Media Player Icons",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "play_button": {
+        "type": "Image",
+        "config": {
+          "label": "Play Button",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "pause_button": {
+        "type": "Image",
+        "config": {
+          "label": "Pause Button",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "play_button_transparent": {
+        "type": "Image",
+        "config": {
+          "label": "Play Button Transparent",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "pause_button_transparent": {
+        "type": "Image",
+        "config": {
+          "label": "Pause Button Transparent",
+          "constraint": {},
+          "thumbnails": []
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,88 @@
+.titleContainer {
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-5);
+  align-items: center;
+  background-color: inherit;
+  width: fit-content;
+  position: relative;
+}
+
+.titleContainer h6 {
+  font-weight: 300;
+  font-size: var(--text-s);
+  text-transform: uppercase;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-3);
+  transition: transform 0.2s linear;
+}
+
+.title h4 {
+  font-weight: 400 !important;
+}
+
+.shifted {
+  transform: translateX(var(--spacing-4));
+}
+
+.tags h6 {
+  font-weight: 300;
+  font-size: var(--text-s);
+  text-transform: uppercase;
+}
+
+.tags {
+  display: flex;
+  cursor: pointer;
+}
+
+.tagContainer {
+  background-color: rgb(255, 208, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: var(--border-base);
+  border-radius: 45px;
+  padding: var(--spacing-1) var(--spacing-2);
+  transition: transform 0.2s linear;
+}
+
+.tagContainer h6 {
+  font-weight: 400;
+  font-size: var(--text-xxs);
+  text-transform: uppercase;
+}
+
+.miniplayer .tagContainer h6 {
+  font-size: var(--text-xxxs);
+}
+
+.cont {
+  display: flex;
+  gap: var(--spacing-4);
+}
+
+.miniplayer .cont h4 {
+  font-size: var(--text-l);
+}
+
+.miniplayer .channelContainer h6 {
+  font-size: var(--text-s);
+}
+
+.channelContainer h6 {
+  font-weight: 400;
+  width: fit-content;
+  font-size: var(--text-s);
+}
+
+.titleContainer h4 {
+  --stroke-width: 1.5px;
+  font-weight: 600;
+  font-size: var(--text-xl);
+  text-transform: uppercase;
+}

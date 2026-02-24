@@ -1,0 +1,9 @@
+.forgotPassword p {
+  font-size: calc(0.35vw + 0.35rem);
+  text-decoration: underline;
+}
+
+.button {
+  display: flex;
+  justify-content: flex-end;
+}

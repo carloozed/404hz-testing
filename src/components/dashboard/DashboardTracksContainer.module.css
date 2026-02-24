@@ -1,0 +1,10 @@
+.tracksList {
+  overflow-y: scroll;
+}
+
+.tracks {
+  height: fit-content;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  row-gap: 2rem;
+}

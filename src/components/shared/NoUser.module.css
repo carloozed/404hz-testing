@@ -1,0 +1,34 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100svh;
+}
+
+.nouser {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: var(--spacing-4);
+}
+
+.nouser h1 {
+  font-size: var(--text-4xl);
+  text-transform: uppercase;
+}
+
+.nouser p {
+  width: 75%;
+  text-align: center;
+  font-size: var(--text-m);
+  line-height: var(--paragraph-lineheigt);
+}
+
+.buttonContainer {
+  padding-top: var(--spacing-8);
+  display: flex;
+  gap: var(--spacing-4);
+  align-items: center;
+  justify-content: center;
+}

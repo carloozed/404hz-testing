@@ -1,0 +1,41 @@
+.button {
+  border: var(--border-base);
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  background-color: white;
+  width: fit-content;
+}
+
+.textbox,
+.imagebox {
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: center;
+}
+
+.textbox {
+  background-color: var(--black);
+  height: 100%;
+  padding: 0 1rem;
+}
+
+.imagebox {
+  height: 100%;
+  max-width: 5rem;
+  width: 2rem;
+}
+
+.textbox p {
+  color: white;
+  text-transform: uppercase;
+  font-weight: var(--text);
+  transform: translateY(2px);
+  width: fit-content;
+  line-height: 100%;
+}
+
+.box img {
+  scale: 1.2;
+}

@@ -1,0 +1,46 @@
+.container {
+  display: flex;
+  gap: var(--spacing-2);
+  align-items: center;
+  height: fit-content;
+  justify-content: flex-end;
+  width: fit-content;
+}
+
+.container label {
+  font-weight: 400;
+  font-size: var(--text-s);
+  text-transform: uppercase;
+}
+
+.toggleContainer {
+  border: var(--border-base);
+  width: 2rem;
+  position: relative;
+  background-color: var(--main-color);
+  cursor: pointer;
+  height: 1rem;
+  border-radius: 20px;
+}
+
+.bound {
+  height: 100%;
+  position: relative;
+}
+
+.toggle {
+  position: absolute;
+  background-color: var(--black);
+  height: 100%;
+  width: 50%;
+  aspect-ratio: 1/1;
+  top: 0;
+  left: 0;
+  transition: transform 0.2s linear;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.setsActive {
+  transform: translateX(100%);
+}

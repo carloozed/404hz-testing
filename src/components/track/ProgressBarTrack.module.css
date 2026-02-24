@@ -1,0 +1,66 @@
+.container {
+  width: 100%;
+  height: 100%;
+  margin-right: var(--spacing-2);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-1);
+  padding-left: var(--spacing-2);
+}
+
+.progressbarContainer {
+  height: var(--spacing-3);
+  position: relative;
+  border: var(--border-base);
+  overflow: hidden;
+}
+
+.seekerContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgb(243, 243, 243);
+  width: calc(100%);
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  will-change: transform;
+  transition: transform 0.5s linear;
+}
+
+.seekerWrapper {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.seeker {
+  height: 120%;
+  width: 1.5rem;
+  background-color: var(--main-color);
+  border: var(--border-base);
+}
+
+.timecontainer {
+  align-self: flex-end;
+  display: flex;
+}
+
+.timecontainer p {
+  font-size: var(--text-xxs);
+  font-weight: 300;
+}
+
+.noPreview {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.noPreview p {
+  font-size: var(--text-sm);
+  text-transform: uppercase;
+}

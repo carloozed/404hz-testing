@@ -1,0 +1,53 @@
+.folder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: fit-content;
+  height: fit-content;
+  gap: var(--spacing-4);
+}
+
+.previewImages {
+  border: var(--border-base);
+  height: fit-content;
+  width: fit-content;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  padding: var(--spacing-3);
+  gap: var(--spacing-1-5);
+  background-color: var(--main-color);
+  transition: filter 0.5s var(--bezier);
+  cursor: pointer;
+  height: calc(7rem + 7vw);
+  width: calc(7rem + 7vw);
+  position: relative;
+}
+
+.folder:hover .previewImages {
+  filter: brightness(1.1);
+}
+
+.imagecontainer {
+  height: 100%;
+  width: 100%;
+  min-height: 0;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.label h3,
+.label h5 {
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.label h5 {
+  font-size: var(--text-s);
+}

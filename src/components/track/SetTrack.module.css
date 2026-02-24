@@ -1,0 +1,160 @@
+.track {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-1);
+  position: relative;
+  padding: var(--spacing-3);
+  justify-content: center;
+  transition: all 0.4s var(--bezier);
+  background-color: transparent;
+  transform: scale(1);
+  position: relative;
+}
+
+.hovered {
+  outline: 6px solid var(--accent-color);
+  transform: scale(1.05);
+}
+
+.trackImageContainer {
+  height: 10rem;
+  width: 10rem;
+  transition:
+    transform 0.3s var(--bezier),
+    outline 0.3s var(--bezier);
+}
+
+.highlighted {
+  outline: var(--spacing-1) solid red;
+  animation: outlinePulse 8s ease-in-out infinite;
+}
+
+@keyframes outlinePulse {
+  0% {
+    outline-color: #ffd700;
+  }
+
+  8% {
+    outline-color: #ffc107;
+  }
+
+  16% {
+    outline-color: #ffeb3b;
+  }
+
+  25% {
+    outline-color: #fff176;
+  }
+
+  33% {
+    outline-color: #ffe082;
+  }
+
+  41% {
+    outline-color: #ffca28;
+  }
+
+  50% {
+    outline-color: #ffb300;
+  }
+
+  58% {
+    outline-color: #f9a825;
+  }
+
+  66% {
+    outline-color: #fdd835;
+  }
+
+  75% {
+    outline-color: #ffee58;
+  }
+
+  83% {
+    outline-color: #ffa000;
+  }
+
+  91% {
+    outline-color: #ff8f00;
+  }
+
+  100% {
+    outline-color: #ffd700;
+  }
+}
+
+.hovered .trackImageContainer {
+  transform: scale(1.05);
+}
+
+.confidenceScore {
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+}
+
+.albumCover {
+  position: relative;
+}
+
+.albumCover:hover .imageOverlay {
+  opacity: 1;
+}
+
+.trackDetails {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-2);
+  width: 100%;
+}
+
+@keyframes membranePulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1);
+  }
+
+  10% {
+    transform: scale(1.02);
+  }
+
+  20% {
+    transform: scale(0.98);
+  }
+
+  30% {
+    transform: scale(1.015);
+  }
+
+  40% {
+    transform: scale(0.99);
+  }
+
+  50% {
+    transform: scale(1.01);
+    box-shadow: 0 0 8px 2px rgba(255, 255, 255, 0.05);
+  }
+
+  60% {
+    transform: scale(0.995);
+  }
+
+  70% {
+    transform: scale(1.008);
+  }
+
+  80% {
+    transform: scale(0.998);
+  }
+
+  90% {
+    transform: scale(1.003);
+  }
+
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1);
+  }
+}

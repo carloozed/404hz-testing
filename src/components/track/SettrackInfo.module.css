@@ -1,0 +1,31 @@
+.infoContainerScanning {
+  display: flex;
+  flex-direction: column;
+  padding-top: var(--spacing-2);
+  gap: var(--spacing-1);
+  align-items: left;
+  width: 100%;
+  position: relative;
+}
+
+.title h4 {
+  font-weight: 400;
+  font-size: var(--text-sm);
+  max-width: 16rem;
+  overflow: hidden;
+}
+
+.author h4 {
+  font-weight: 400;
+  font-size: var(--text-s);
+}
+
+.labelcontainer {
+  padding-top: var(--spacing-1);
+}
+
+.labelcontainer h5,
+.recordedAt h5 * {
+  font-weight: 300;
+  font-size: var(--text-s);
+}

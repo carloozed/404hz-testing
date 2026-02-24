@@ -1,0 +1,27 @@
+{
+  "format": "custom",
+  "id": "global_search_genres",
+  "label": "Global Search Genres",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "genres": {
+        "type": "Group",
+        "config": {
+          "label": "Genres",
+          "repeat": true,
+          "fields": {
+            "item": {
+              "type": "Text",
+              "config": {
+                "label": "Item",
+                "placeholder": ""
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

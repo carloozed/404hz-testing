@@ -1,0 +1,9 @@
+.foundInMoreSets h5 {
+  font-weight: 300;
+  font-size: var(--text-s);
+}
+
+.foundInMoreSets span {
+  text-decoration: underline;
+  cursor: pointer;
+}

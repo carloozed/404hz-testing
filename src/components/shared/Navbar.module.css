@@ -1,0 +1,145 @@
+.container {
+  display: flex;
+  background-color: var(--main-color);
+  pointer-events: all;
+  border: var(--border-base);
+  padding: var(--spacing-2-5) var(--spacing-5);
+}
+
+.container *::selection {
+  background-color: transparent;
+  color: var(--black);
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-16);
+}
+
+.navItem {
+  display: flex;
+}
+
+.navItem * {
+  font-size: var(--text-sm);
+}
+
+.index {
+  font-weight: bold;
+  text-transform: uppercase;
+  width: var(--spacing-8);
+  transform-origin: left center;
+  transition: transform 0.2s var(--spring-bezier);
+}
+
+.navItem p {
+  text-transform: uppercase;
+}
+
+.iconContainer {
+  display: flex;
+  gap: var(--spacing-8);
+  align-items: center;
+  justify-content: center;
+}
+
+.iconContainer img {
+  transform: translateY(2px) scale(0.8);
+}
+
+/* Small Mobile */
+/* Up to 480px */
+@media (max-width: 30rem) {}
+
+/* Mobile */
+/* Up to 768px */
+@media (max-width: 48rem) {
+  .container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navbar {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-4);
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    gap: var(--spacing-20);
+    width: 100%;
+  }
+
+  .navItem {
+    display: flex;
+    gap: var(--spacing-4);
+    width: 100%;
+  }
+
+  .navItem * {
+    font-size: var(--text-4xl);
+  }
+
+  .index {
+    font-weight: bold;
+    text-transform: uppercase;
+    width: var(--spacing-8);
+    transform-origin: left center;
+    transition: transform 0.2s var(--spring-bezier);
+  }
+
+  .navItem a {
+    text-transform: uppercase;
+  }
+
+  .iconContainer {
+    display: flex;
+    gap: var(--spacing-8);
+    align-items: center;
+    justify-content: center;
+  }
+
+  .iconContainer img {
+    transform: translateY(2px) scale(0.8);
+  }
+}
+
+/* Tablet */
+/* 768px to 1184px */
+@media (min-width: 48rem) and (max-width: 74rem) {}
+
+/* Tablet - Portrait Orientation */
+/* 768px to 1184px in portrait mode */
+@media (min-width: 48rem) and (max-width: 74rem) and (orientation: portrait) {}
+
+/* Desktop */
+/* 1184px and up */
+@media (min-width: 74rem) {}
+
+/* Large Desktop */
+/* 1440px and up */
+@media (min-width: 90rem) {}
+
+@media (min-width: 120rem) {}
+
+/* Touch Devices */
+/* Any touch device regardless of size */
+@media (hover: none) {}
+
+/* Non-Touch Devices */
+/* Devices with precise pointer (mouse) */
+@media (hover: hover) and (pointer: fine) {}
+
+/* Prefers Dark Mode */
+/* User has set dark mode preference */
+@media (prefers-color-scheme: dark) {}
+
+/* Prefers Reduced Motion */
+/* User has requested minimal animations */
+@media (prefers-reduced-motion: reduce) {}

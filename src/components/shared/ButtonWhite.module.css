@@ -1,0 +1,41 @@
+.button {
+  border: var(--border-base);
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  background-color: var(--black);
+  width: fit-content;
+  height: 2rem;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: center;
+}
+
+.box:nth-of-type(1) {
+  background-color: white;
+  height: 100%;
+  padding: 0 1rem;
+}
+
+.box:nth-of-type(2) {
+  background-color: var(--black);
+  height: 100%;
+  width: 2rem;
+}
+
+.box:nth-of-type(1) p {
+  color: var(--black);
+  text-transform: uppercase;
+  font-weight: var(--text);
+  transform: translateY(2px);
+  width: fit-content;
+  line-height: 100%;
+}
+
+.box img {
+  scale: 1.2;
+}

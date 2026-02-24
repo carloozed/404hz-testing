@@ -1,0 +1,19 @@
+{
+  "format": "custom",
+  "id": "placeholder_image_track",
+  "label": "Placeholder Image Track",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "placeholder_image_track": {
+        "type": "Image",
+        "config": {
+          "label": "Placeholder Image Track",
+          "constraint": {},
+          "thumbnails": []
+        }
+      }
+    }
+  }
+}

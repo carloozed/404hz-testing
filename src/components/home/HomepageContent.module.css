@@ -1,0 +1,226 @@
+.mainContainer {
+  --shake-distance: 1%;
+  --negative-shake-distance: calc(var(--shake-distance) * -1);
+  display: grid;
+  grid-template-columns: 0.75fr 1fr;
+  max-height: 100svh;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.rightContainer,
+.leftContainer {
+  height: 100%;
+  width: 100%;
+  padding: var(--spacing-4);
+}
+
+.leftContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+.rightContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  gap: var(--spacing-12);
+}
+
+.rightContainer p {
+  width: 60%;
+  line-height: 150%;
+  font-size: var(--text-l);
+}
+
+.buttonLogoContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.rightContainer {
+  position: relative;
+}
+
+.logoContainer {
+  transition: transform 0.5s var(--bezier);
+  transform-origin: center;
+}
+
+.responseReceived {
+  transform: translateX(-120%) scale(0.2) translateY(200%);
+}
+
+.animation img {
+  animation: shaking 0.3s ease-in-out infinite;
+}
+
+/* Copy this code after the above code */
+@keyframes shaking {
+  0% {
+    transform: translateX(0);
+  }
+
+  10% {
+    transform: translate(
+      var(--negative-shake-distance),
+      var(--negative-shake-distance)
+    );
+  }
+
+  20% {
+    transform: translate(var(--shake-distance), var(--negative-shake-distance));
+  }
+
+  30% {
+    transform: translate(var(--negative-shake-distance), var(--shake-distance));
+  }
+
+  40% {
+    transform: translate(var(--shake-distance), var(--shake-distance));
+  }
+
+  50% {
+    transform: translate(
+      var(--negative-shake-distance),
+      var(--negative-shake-distance)
+    );
+  }
+
+  60% {
+    transform: translate(var(--shake-distance), var(--negative-shake-distance));
+  }
+
+  70% {
+    transform: translate(var(--negative-shake-distance), var(--shake-distance));
+  }
+
+  80% {
+    transform: translate(
+      var(--negative-shake-distance),
+      var(--negative-shake-distance)
+    );
+  }
+
+  90% {
+    transform: translate(var(--shake-distance), var(--negative-shake-distance));
+  }
+
+  100% {
+    transform: translate(0);
+  }
+}
+
+.logoContainer img {
+  height: 20vw;
+  object-fit: contain;
+}
+
+/* Small Mobile */
+/* Up to 480px */
+@media (max-width: 30rem) {
+}
+
+/* Mobile */
+/* Up to 768px */
+@media (max-width: 48rem) {
+  .mainContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .rightContainer,
+  .leftContainer {
+    width: 100%;
+    padding: var(--spacing-2);
+  }
+
+  .leftContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    height: 70%;
+    overflow: hidden;
+  }
+
+  .rightContainer {
+    background-image:
+      linear-gradient(var(--black) 0.5px, transparent 0.5px),
+      linear-gradient(90deg, var(--black) 0.5px, transparent 0.5px);
+    background-size: 5.2vw 5.2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    gap: var(--spacing-12);
+    height: 30%;
+  }
+
+  .rightContainer p {
+    width: 60%;
+    line-height: 150%;
+    font-size: var(--text-l);
+  }
+
+  .buttonLogoContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .rightContainer {
+    position: relative;
+  }
+
+  .logoContainer {
+    transition: transform 0.5s var(--bezier);
+  }
+
+.responseReceived {
+    transform: translateX(-140%) scale(0.15) translateY(250%)
+}
+
+.animation img {
+    animation: shaking 0.3s ease-in-out infinite;
+  }
+
+  .responseContainer {
+    padding: var(--spacing-4);
+    position: absolute;
+    min-width: 100%;
+    height: 60%;
+    width: 100%;
+    background-color: var(--main-color);
+    border: 0.5px solid var(--black);
+    border-right: 0;
+    border-bottom: 0;
+    bottom: 0;
+    right: 0;
+    overflow: scroll;
+    transform: translateY(100%);
+    transition: transform 0.5s var(--bezier);
+    z-index: 10;
+  }
+
+  .responseGood {
+    transform: translateY(0%);
+  }
+
+  .responses {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .logoContainer img {
+    height: 20vw;
+    object-fit: contain;
+  }
+}

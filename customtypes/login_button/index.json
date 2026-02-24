@@ -1,0 +1,20 @@
+{
+  "format": "custom",
+  "id": "login_button",
+  "label": "Login Button",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "text": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Text",
+          "placeholder": "Log In",
+          "allowTargetBlank": true,
+          "multi": "paragraph,heading4,heading5,heading6,strong,em,hyperlink"
+        }
+      }
+    }
+  }
+}

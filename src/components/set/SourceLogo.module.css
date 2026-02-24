@@ -1,0 +1,11 @@
+.sourceLogoContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+}
+
+.sourceLogoContainer img {
+  height: fit-content;
+}

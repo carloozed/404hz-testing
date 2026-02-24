@@ -1,0 +1,38 @@
+.trackneedles {
+  position: absolute;
+  width: 100%;
+  pointer-events: none;
+}
+
+.trackneedlesRelative {
+  position: relative;
+  width: 100%;
+  height: var(--waveform-height);
+  pointer-events: none;
+}
+
+.needlecontainer {
+  position: absolute;
+  top: var(--spacing-8-5);
+  transform: translateX(-50%);
+  cursor: pointer;
+}
+
+.miniplayer .needlecontainer {
+  top: var(--spacing-4);
+}
+
+.miniplayer .needle {
+  height: var(--spacing-2);
+}
+
+.needle {
+  height: var(--spacing-3);
+  aspect-ratio: 1;
+  pointer-events: all;
+  transition: transform 0.2s var(--bezier);
+}
+
+.needlecontainer:hover .needle {
+  transform: scale(1.75);
+}

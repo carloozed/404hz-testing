@@ -1,0 +1,10 @@
+.container {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.container h2 {
+  font-size: var(--text-2xl);
+}

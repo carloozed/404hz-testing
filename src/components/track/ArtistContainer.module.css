@@ -1,0 +1,42 @@
+.author {
+  max-width: 100%;
+  overflow: hidden;
+  width: 13rem;
+  max-width: 13rem;
+}
+
+.slider:hover h4 {
+  animation: sliding 8s linear infinite;
+}
+
+.author h4 {
+  font-weight: 400;
+  font-size: var(--text-s);
+  white-space: nowrap;
+}
+
+@keyframes sliding {
+  0% {
+    transform: translateX(0%);
+  }
+
+  20% {
+    transform: translateX(-25%);
+  }
+
+  40% {
+    transform: translateX(-25%);
+  }
+
+  60% {
+    transform: translateX(-0%);
+  }
+
+  80% {
+    transform: translateX(-0%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}

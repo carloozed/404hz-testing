@@ -1,0 +1,30 @@
+.imageOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition:
+    opacity 0.2s ease,
+    background-color 0.2s ease;
+  pointer-events: none;
+}
+
+.imageOverlay.showAlways {
+  opacity: 1 !important;
+}
+
+.imageOverlay.hovered {
+  opacity: 1 !important;
+}
+
+.imageOverlay img {
+  height: 40%;
+  width: auto;
+  cursor: pointer;
+  pointer-events: all;
+}

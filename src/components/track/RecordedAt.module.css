@@ -1,0 +1,8 @@
+.recordedAt h5 * {
+  font-weight: 300;
+  font-size: var(--text-s);
+}
+
+.miniplayer h5 * {
+  font-size: var(--text-xxs);
+}

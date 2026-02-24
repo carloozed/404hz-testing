@@ -1,0 +1,69 @@
+.waveformContainer {
+  --border-radius: 20px;
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-2);
+  flex-direction: column;
+  width: fit-content;
+  padding-top: var(--spacing-3);
+  position: relative;
+  width: 100%;
+  max-width: 50rem;
+  --waveform-height: 2.25rem;
+}
+
+.miniplayer {
+  padding-top: var(--spacing-1);
+  --waveform-height: 1.25rem;
+}
+
+.waveform {
+  height: var(--waveform-height);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+  padding: var(--spacing-1);
+}
+
+.waveform div {
+  width: calc(0.075px + 0.075vw);
+  border: var(--border-base);
+  overflow: hidden;
+}
+
+.seekerContainer {
+  position: absolute;
+  left: 0;
+  height: var(--waveform-height);
+  pointer-events: none;
+  transition: width 0.4s ease-in-out;
+  border-top-left-radius: var(--border-radius);
+  border-bottom-left-radius: var(--border-radius);
+  background-color: rgb(254, 255, 235);
+}
+
+.seeker {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.seekerEnd {
+  height: 100%;
+  width: 1px;
+  position: relative;
+}
+
+.seekerCircle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  height: var(--spacing-2);
+  width: var(--spacing-2);
+  border-radius: 50%;
+  background-color: var(--black);
+}

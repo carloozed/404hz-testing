@@ -1,0 +1,57 @@
+.container {
+  background-color: var(--main-color);
+  padding: var(--spacing-4) 0;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  overflow: hidden;
+}
+
+.titleContainer {
+  position: relative;
+  overflow: hidden !important;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-4);
+}
+
+.titleContainer h2 {
+  text-transform: uppercase;
+  font-size: var(--text-2xl);
+  transition: transform 0.5s var(--bezier);
+}
+
+.titleWrapper {
+  position: relative;
+  overflow-y: hidden;
+  width: 15vw;
+}
+
+.rightContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.arrow {
+  position: absolute;
+  transition: transform 0.8s var(--bezier);
+  top: 50%;
+  left: 4%;
+  transform: translateY(-60%);
+}
+
+.arrow img {
+  height: 0.75rem;
+  transform: rotate(225deg);
+  width: auto;
+}
+
+.hidden {
+  transform: translateY(250%);
+}

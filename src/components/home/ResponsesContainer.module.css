@@ -1,0 +1,41 @@
+.responseContainer {
+  padding: var(--spacing-4) 0;
+  padding-top: 0;
+  position: absolute;
+  min-width: 100%;
+  max-height: 100%;
+  height: 100%;
+  width: 100%;
+  border: none;
+  bottom: 0;
+  right: 0;
+  overflow: scroll;
+  transform: translateY(100%);
+  transition: transform 0.9s var linear;
+  z-index: 10;
+
+}
+
+.upperContainer {
+  padding: var(--spacing-2);
+  border-bottom: var(--border-base);
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background-color: var(--main-color);
+}
+
+.responseGood {
+  transform: translateY(0%);
+}
+
+.responses {
+  position: relative;
+  display: grid;
+  padding-top: var(--spacing-4);
+  grid-template-columns: repeat(auto-fill, 14rem);
+  transition: height 0.5s var(--bezier);
+  row-gap: var(--spacing-2);
+  justify-content: center;
+}

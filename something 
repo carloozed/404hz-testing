@@ -1,0 +1,48 @@
+import type { NextConfig } from 'next';
+
+const nextConfig: NextConfig = {
+  // 👇 this tells Next.js to do a static export into ./out
+  output: 'export',
+
+  // 👇 required for S3 (no Node.js image optimizer available)
+  images: {
+    unoptimized: true,
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'i.scdn.co',
+        port: '',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'i1.sndcdn.com',
+        port: '',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'cdn-images.dzcdn.net',
+        port: '',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'e-cdns-images.dzcdn.net',
+        port: '',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'thumbnailer.mixcloud.com',
+        port: '',
+        pathname: '/**',
+      },
+    ],
+  },
+
+  // optional but nice for S3 "static website hosting"
+  // trailingSlash: true,
+};
+
+export default nextConfig;

@@ -1,0 +1,28 @@
+.container {
+  padding-top: var(--spacing-2);
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: var(--spacing-2);
+}
+
+.setInformationContainer {
+  padding: var(--spacing-2);
+}
+
+.toggleContainer {
+  padding: var(--spacing-2);
+}
+
+.tracksContainer {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 14rem);
+  justify-content: center;
+  transition: transform 0.8s var(--spring-bezier);
+  max-height: 40rem;
+  overflow-y: auto;
+  gap: var(--spacing-6);
+  padding-top: var(--spacing-12);
+  padding-bottom: 4rem;
+}

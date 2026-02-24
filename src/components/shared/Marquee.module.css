@@ -1,0 +1,29 @@
+.marquee {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.marqueeFade {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 10;
+  height: 100%;
+  width: 6rem;
+}
+
+.marqueeFadeLeft {
+  left: 0;
+  background: linear-gradient(to right, var(--background), transparent);
+}
+
+.marqueeFadeRight {
+  right: 0;
+  background: linear-gradient(to left, var(--background), transparent);
+}
+
+.marqueeItem {
+  flex-shrink: 0;
+  object-fit: contain;
+}

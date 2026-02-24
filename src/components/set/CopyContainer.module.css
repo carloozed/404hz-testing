@@ -1,0 +1,58 @@
+.copycontainer {
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.copycontainer::before {
+  content: 'copy url';
+  position: absolute;
+  left: 0%;
+  top: -50%;
+  transform: translateY(350%);
+  font-size: var(--text-xxs);
+  opacity: 0;
+  width: 4rem;
+}
+
+.copycontainer.copied::before {
+  content: 'copied!';
+  opacity: 1;
+}
+
+.copycontainer:hover::before {
+  opacity: 1;
+}
+
+.copycontainer img {
+  height: var(--spacing-4);
+  width: auto;
+  aspect-ratio: 1/1;
+}
+
+.miniplayer.copycontainer img {
+  height: var(--spacing-2-5);
+  width: auto;
+  aspect-ratio: 1/1;
+}
+
+.miniplayer.copycontainer::before {
+  content: 'copy url';
+  position: absolute;
+  left: 150%;
+  top: 0;
+  transform: translateY(50%);
+  font-size: var(--text-xxs);
+  opacity: 0;
+  width: 4rem;
+}
+
+.miniplayer.copycontainer.copied::before {
+  content: 'copied!';
+  opacity: 1;
+}
+
+.miniplayer.copycontainer:hover::before {
+  opacity: 1;
+}
