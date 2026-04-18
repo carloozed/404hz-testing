@@ -25,6 +25,8 @@ export function ConfidenceScoreColor({ track }: ConfidenceColorProps) {
         className={styles.confidenceScore}
         onMouseEnter={() => setIsConfidenceHovered(true)}
         onMouseLeave={() => setIsConfidenceHovered(false)}
+        role="button"
+        tabIndex={0}
       >
         <div
           className={styles.confidenceColor}
